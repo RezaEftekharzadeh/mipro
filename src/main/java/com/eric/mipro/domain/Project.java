@@ -22,7 +22,7 @@ public class Project {
 
     private String projectName;
     private String projectIdentifier;
-    private  String decription;
+    private  String description;
     private Date start_date;
     private Date end_date;
 
