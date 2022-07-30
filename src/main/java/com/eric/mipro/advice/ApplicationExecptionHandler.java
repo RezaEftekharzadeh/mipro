@@ -10,7 +10,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestControllerAdvice
-
 public class ApplicationExecptionHandler {
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
