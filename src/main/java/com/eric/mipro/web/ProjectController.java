@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/project")
@@ -43,5 +42,9 @@ public class ProjectController {
         return new ResponseEntity<>(projectService.findProjectByIdentifier(identifier), HttpStatus.OK);
     }
 
+    @GetMapping("/allproject")
+    public Iterable<Project> findAllProjects(){
+        return projectService.findAllProject();
+    }
 
 }
